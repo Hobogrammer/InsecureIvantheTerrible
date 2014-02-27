@@ -80,4 +80,10 @@ class CommentsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def comment_params
+    params.require(:post).permit(:body)
+  end
 end

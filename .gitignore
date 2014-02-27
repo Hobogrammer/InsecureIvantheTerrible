@@ -22,3 +22,5 @@
 .project
 __eclim_temp_Vagrantfile
 .rspec
+config/application.yml
+config/initializers/secret_token.rb
