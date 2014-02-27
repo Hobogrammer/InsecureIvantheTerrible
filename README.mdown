@@ -21,3 +21,11 @@ _What I did_
 * Add strong params
 * Escape database queries
     * `.where("title like '%#{search}%'")` => `.where("title like ?", "#{search}"`
+
+Before
+---
+![Imgur](http://i.imgur.com/sutZJv5.png)
+
+After
+-----
+![Imgur](http://i.imgur.com/7QzUftP)
