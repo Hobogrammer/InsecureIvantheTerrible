@@ -80,4 +80,10 @@ class RepliesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title,:body)
+  end
 end
