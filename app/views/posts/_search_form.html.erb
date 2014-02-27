@@ -8,7 +8,7 @@
     <%= label_tag "status_published", "Published" %>
   </p>
   <p>
-    <%= radio_button_tag :status, "unpublished" %>
+    <%= radio_button_tag :status, "u-npublished" %>
     <%= label_tag "status_unpublished", "Unpublished" %>
   </p>
   <p>
@@ -17,7 +17,7 @@
 <% end %>
 </section>
 <% if params[:search].present? %>
-  <%= content_tag :div, "data-#{params[:status]}" => true do %>
+  <%= content_tag :div, "data-#{@status}" => true do %>
     Number of results: undefined for simplicity<%#= @posts.size if @posts %>
   <% end -%>
 <% end -%>
